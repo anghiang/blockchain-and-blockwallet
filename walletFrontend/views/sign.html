@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>签名页面</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style>
+        #top{
+            height: 70px;
+            background-color: #f2f4f6;
+            align-content: space-around
+        }
+        #logo{
+            width: 45px;
+            padding-left: 10px;
+           
+        }
+        #status{
+            line-height: 40px;
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+        <div class="row justify-content-between" id="top">
+            <div  class="col-2">
+                <img src="/assets/img/logo.png" alt="" id="logo">
+            </div>
+
+        </div>
+        
+   
+        
+    <div class="container mt-4">
+
+                <div class="row justify-content-center">
+                    <div class="col-9 text-center">
+                        <span style="font-weight: bold;">签名所用的账户如下:</span>
+                    </div>
+                </div> 
+                <div class="row justify-content-center" style="margin-bottom: 20px;">
+                    <div class="col-6 text-center">
+                        <span id="address">0x0B6e9...6b98ff</span>
+                    </div>
+                </div>
+
+                <hr>
+
+        <div class="mb-7 text-center" style="margin-bottom: 20px;">
+            <span>请点击签名确定交易：</span>            
+        </div>
+
+        <div class="row justify-content-center">
+            <div  class="col-3 text-center">
+                <button id="cancle" class="btn btn-primary mt-2 text-center">取消</button>
+            </div>
+            <div  class="col-3 text-center">
+                <button id="confirm" class="btn btn-primary mt-2 text-center">确定</button>
+            </div>
+
+        </div>
+        <!-- <div id="privateKeyContainer" class="mb-3">
+            <label for="privateKey" class="form-label">请输入私钥:</label>
+            <input type="text" class="form-control" id="privateKey">
+            <div class="text-center">
+                <button id="importPrivateKeyBtn" class="btn btn-primary mt-2 text-center">导入</button>
+            </div>
+        </div>
+        <div id="pemFileContainer" class="mb-3">
+            <label for="pemFile" class="form-label">选择PEM文件:</label>
+            <input type="file" class="form-control" id="pemFile">
+            <div class="text-center">
+                <button id="importPemFileBtn" class="btn btn-primary mt-2 text-center">导入</button>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../utils/importPrivateKey.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
